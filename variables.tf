@@ -1,4 +1,4 @@
-variable "name" {
+variable "replication_group_id" {
   type = string
 }
 
@@ -21,7 +21,7 @@ variable "subnets" {
   default = []
 }
 
-variable "security_groups" {
+variable "security_group_ids" {
   type    = list(string)
   default = []
 }
@@ -32,7 +32,7 @@ variable "node_groups" {
   default     = null
 }
 
-variable "replicas" {
+variable "replicas_per_node_group" {
   description = "Number of replica nodes in each node group."
   type        = number
   default     = null
