@@ -48,13 +48,6 @@ variable "num_cache_clusters" {
   default     = null
 }
 
-
-variable "replicas_per_node_group" {
-  description = "Number of replica nodes in each node group."
-  type        = number
-  default     = null
-}
-
 variable "multi_az_enabled" {
   type    = bool
   default = true
