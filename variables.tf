@@ -63,7 +63,7 @@ variable "apply_immediately" {
   default = true
 }
 
-variable "snapshot_arns" {
-  type    = list(string)
-  default = []
+variable "snapshot_name" {
+  type    = string
+  default = null
 }
