@@ -67,3 +67,8 @@ variable "snapshot_name" {
   type    = string
   default = null
 }
+
+variable "snapshot_arns" {
+  type    = list(string)
+  default = []
+}
