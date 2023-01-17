@@ -62,3 +62,8 @@ variable "apply_immediately" {
   type    = bool
   default = true
 }
+
+variable "snapshot_arns" {
+  type    = list(string)
+  default = []
+}
