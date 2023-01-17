@@ -58,4 +58,7 @@ variable "tags" {
   default = {}
 }
 
-
+variable "apply_immediately" {
+  type    = bool
+  default = true
+}
