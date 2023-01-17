@@ -15,8 +15,7 @@ resource "aws_elasticache_replication_group" "this" {
   multi_az_enabled           = var.multi_az_enabled
   tags                       = var.tags
   apply_immediately          = var.apply_immediately
-  snapshot_arns              = var.snapshot_arns
-  
+  snapshot_name              = var.snapshot_name
 }
 
 
