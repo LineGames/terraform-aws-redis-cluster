@@ -14,7 +14,7 @@ resource "aws_elasticache_replication_group" "this" {
   num_cache_clusters         = var.num_cache_clusters
   multi_az_enabled           = var.multi_az_enabled
   tags                       = var.tags
-  apply_immediately          = try(var.apply_immediately, true)
+  apply_immediately          = var.apply_immediately
   
 }
 
