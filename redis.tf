@@ -17,7 +17,7 @@ resource "aws_elasticache_replication_group" "this" {
   apply_immediately          = var.apply_immediately
   snapshot_name              = var.snapshot_name
   snapshot_arns             = var.snapshot_arns
-
+  auto_minor_version_upgrade = var.auto_minor_version_upgrade
 }
 
 
