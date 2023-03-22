@@ -72,3 +72,7 @@ variable "snapshot_arns" {
   type    = list(string)
   default = []
 }
+variable "auto_minor_version_upgrade" {
+  type    = bool
+  default = false
+}
