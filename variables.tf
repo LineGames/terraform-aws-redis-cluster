@@ -48,7 +48,7 @@ variable "num_node_groups" {
   default     = null
 }
 
-variable "replicas_per_node_group" {
+variable "num_replica_node_group" {
   description = "Number of node groups (shards) for this Redis replication group."
   type        = number
   default     = null
