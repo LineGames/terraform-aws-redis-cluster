@@ -42,7 +42,13 @@ variable "automatic_failover_enabled" {
   default = true
 }
 
-variable "num_cache_clusters" {
+variable "num_node_groups" {
+  description = "Number of node groups (shards) for this Redis node group."
+  type        = number
+  default     = null
+}
+
+variable "replicas_per_node_group" {
   description = "Number of node groups (shards) for this Redis replication group."
   type        = number
   default     = null
