@@ -11,7 +11,8 @@ resource "aws_elasticache_replication_group" "this" {
   port                       = var.port
   parameter_group_name       = var.parameter_group_name
   automatic_failover_enabled = var.automatic_failover_enabled
-  num_cache_clusters         = var.num_cache_clusters
+  num_node_groups            = var.num_node_groups
+  replicas_per_node_group    = var.num_replica_node_group
   multi_az_enabled           = var.multi_az_enabled
   tags                       = var.tags
   apply_immediately          = var.apply_immediately
