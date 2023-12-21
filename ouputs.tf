@@ -6,7 +6,7 @@ output "name" {
   value = try(aws_elasticache_replication_group.this[0].replication_group_id, "")
 }
 
-output "primary_endpoint" {
-  value = try(aws_elasticache_replication_group.this[0].primary_endpoint_address, "")
+output "configuration_endpoint_address" {
+  value = try(aws_elasticache_replication_group.this[0].configuration_endpoint_address, "")
 }
 
